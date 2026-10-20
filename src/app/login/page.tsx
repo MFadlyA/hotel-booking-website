@@ -111,7 +111,7 @@ export default function LoginPage() {
                 placeholder="you@example.com"
                 value={email}
                 onChange={(event) => setEmail(event.target.value)}
-                className="w-full border border-[#ded5c8] bg-white px-4 py-4 text-sm text-[#292722] placeholder:text-[#aaa198]"
+                className="rounded-lg w-full border border-[#ded5c8] bg-white px-4 py-4 text-sm text-[#292722] placeholder:text-[#aaa198]"
                 required
               />
             </div>
@@ -144,7 +144,7 @@ export default function LoginPage() {
                   placeholder="Enter your password"
                   value={password}
                   onChange={(event) => setPassword(event.target.value)}
-                  className="w-full border border-[#ded5c8] bg-white px-4 py-4 pr-12 text-sm text-[#292722] placeholder:text-[#aaa198]"
+                  className="rounded-lg w-full border border-[#ded5c8] bg-white px-4 py-4 pr-12 text-sm text-[#292722] placeholder:text-[#aaa198]"
                   required
                 />
 
@@ -170,7 +170,7 @@ export default function LoginPage() {
 
             <button
               type="submit"
-              className="w-full bg-[#4a382d] py-4 text-sm font-medium text-white hover:bg-[#655043]"
+              className="rounded-lg w-full bg-[#4a382d] py-4 text-sm font-medium text-white hover:bg-[#655043]"
             >
               Sign In
             </button>
@@ -186,7 +186,7 @@ export default function LoginPage() {
 
           <Link
             href="/register"
-            className="block border border-[#4a382d] py-4 text-center text-sm font-medium text-[#4a382d] hover:bg-[#eee7dc]"
+            className="rounded-lg block border border-[#4a382d] py-4 text-center text-sm font-medium text-[#4a382d] hover:bg-[#eee7dc]"
           >
             Create an Account
           </Link>

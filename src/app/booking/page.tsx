@@ -342,7 +342,7 @@ function BookingContent() {
 
               <button
                 type="submit"
-                className="w-full bg-[#4a382d] px-6 py-4 text-sm font-medium text-white hover:bg-[#655043]"
+                className="rounded-lg w-full bg-[#4a382d] px-6 py-4 text-sm font-medium text-white hover:bg-[#655043]"
               >
                 Continue to Confirmation
               </button>

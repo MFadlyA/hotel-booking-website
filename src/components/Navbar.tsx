@@ -49,7 +49,7 @@ export default function Navbar() {
 
           <Link
             href="/#booking"
-            className="bg-[#4a382d] px-6 py-3 text-sm text-white hover:bg-[#655043]"
+            className="rounded-lg px-6 py-3 bg-[#4a382d] px-6 py-3 text-sm text-white hover:bg-[#655043]"
           >
             Book Your Stay
           </Link>

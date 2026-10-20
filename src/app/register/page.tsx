@@ -129,7 +129,7 @@ export default function RegisterPage() {
                 placeholder="Enter your full name"
                 value={fullName}
                 onChange={(event) => setFullName(event.target.value)}
-                className="w-full border border-[#ded5c8] bg-white px-4 py-3.5 text-sm placeholder:text-[#aaa198]"
+                className="rounded-lg w-full border border-[#ded5c8] bg-white px-4 py-3.5 text-sm placeholder:text-[#aaa198]"
                 required
               />
             </div>
@@ -149,7 +149,7 @@ export default function RegisterPage() {
                 placeholder="you@example.com"
                 value={email}
                 onChange={(event) => setEmail(event.target.value)}
-                className="w-full border border-[#ded5c8] bg-white px-4 py-3.5 text-sm placeholder:text-[#aaa198]"
+                className="rounded-lg w-full border border-[#ded5c8] bg-white px-4 py-3.5 text-sm placeholder:text-[#aaa198]"
                 required
               />
             </div>
@@ -170,7 +170,7 @@ export default function RegisterPage() {
                 placeholder="+62 812 3456 7890"
                 value={phone}
                 onChange={(event) => setPhone(event.target.value)}
-                className="w-full border border-[#ded5c8] bg-white px-4 py-3.5 text-sm placeholder:text-[#aaa198]"
+                className="rounded-lg w-full border border-[#ded5c8] bg-white px-4 py-3.5 text-sm placeholder:text-[#aaa198]"
               />
             </div>
 
@@ -190,7 +190,7 @@ export default function RegisterPage() {
                   placeholder="At least 8 characters"
                   value={password}
                   onChange={(event) => setPassword(event.target.value)}
-                  className="w-full border border-[#ded5c8] bg-white px-4 py-3.5 pr-12 text-sm placeholder:text-[#aaa198]"
+                  className="rounded-lg w-full border border-[#ded5c8] bg-white px-4 py-3.5 pr-12 text-sm placeholder:text-[#aaa198]"
                   minLength={8}
                   required
                 />
@@ -222,7 +222,7 @@ export default function RegisterPage() {
                   placeholder="Re-enter your password"
                   value={confirmPassword}
                   onChange={(event) => setConfirmPassword(event.target.value)}
-                  className="w-full border border-[#ded5c8] bg-white px-4 py-3.5 pr-12 text-sm placeholder:text-[#aaa198]"
+                  className="rounded-lg w-full border border-[#ded5c8] bg-white px-4 py-3.5 pr-12 text-sm placeholder:text-[#aaa198]"
                   required
                 />
 
@@ -275,7 +275,7 @@ export default function RegisterPage() {
 
             <button
               type="submit"
-              className="w-full bg-[#4a382d] py-4 text-sm font-medium text-white hover:bg-[#655043]"
+              className="rounded-lg w-full bg-[#4a382d] py-4 text-sm font-medium text-white hover:bg-[#655043]"
             >
               Create Account
             </button>

@@ -233,7 +233,7 @@ export default async function RoomDetailsPage({
 
             <Link
               href={`/booking?${bookingParams.toString()}`}
-              className="mt-8 flex w-full items-center justify-center gap-3 bg-[#4a382d] px-5 py-4 text-sm font-medium text-white hover:bg-[#655043]"
+              className="rounded-lg mt-8 flex w-full items-center justify-center gap-3 bg-[#4a382d] px-5 py-4 text-sm font-medium text-white hover:bg-[#655043]"
             >
               Continue Booking
               <ArrowRight size={17} />

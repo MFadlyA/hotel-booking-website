@@ -18,6 +18,8 @@ import Footer from "@/components/Footer";
 
 import { rooms, formatPrice } from "@/data/rooms";
 
+import HeroCarousel from "@/components/HeroCarousel";
+
 const facilities = [
   {
     number: "01",
@@ -77,58 +79,7 @@ export default function HomePage() {
 
       <main>
         {/* HERO */}
-        <section className="relative flex min-h-[650px] items-center overflow-hidden bg-[#4a382d] md:min-h-[720px]">
-          <div
-            className="absolute inset-0 bg-cover bg-center"
-            style={{
-              backgroundImage:
-                "url('https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=2200&q=90')",
-            }}
-          />
-
-          <div className="absolute inset-0 bg-gradient-to-r from-[#201b17]/85 via-[#201b17]/55 to-[#201b17]/15" />
-
-          <div className="container-custom relative z-10 py-24">
-            <div className="max-w-3xl">
-              <p className="mb-6 text-xs tracking-[0.35em] text-[#e0c6a5] sm:text-sm">
-                A REFINED HOTEL EXPERIENCE
-              </p>
-
-              <h1 className="text-5xl leading-[1.12] text-white sm:text-6xl md:text-7xl lg:text-8xl">
-                A Stay Beyond
-                <br />
-                <span className="italic text-[#e0c6a5]">Expectations.</span>
-              </h1>
-
-              <p className="mt-7 max-w-xl text-sm leading-7 text-white/75 sm:text-base">
-                Discover a world of refined comfort, timeless elegance, and
-                thoughtful hospitality. Your exceptional stay begins here.
-              </p>
-
-              <div className="mt-9 flex flex-wrap gap-4">
-                <a
-                  href="#booking"
-                  className="inline-flex items-center gap-3 bg-[#f8f6f1] px-7 py-4 text-sm font-medium text-[#4a382d] hover:bg-[#e9dfd1]"
-                >
-                  Reserve Your Stay
-                  <ArrowRight size={17} />
-                </a>
-
-                <a
-                  href="#rooms"
-                  className="inline-flex items-center border border-white/50 px-7 py-4 text-sm text-white hover:bg-white/10"
-                >
-                  Explore Rooms
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="absolute bottom-8 right-8 hidden items-center gap-3 text-xs tracking-widest text-white/70 md:flex">
-            <span className="h-px w-12 bg-[#e0c6a5]" />
-            TIMELESS ELEGANCE
-          </div>
-        </section>
+        <HeroCarousel />
 
         {/* BOOKING SEARCH */}
         <section id="booking" className="relative z-20 -mt-1 bg-[#f8f6f1]">
@@ -200,7 +151,7 @@ export default function HomePage() {
               <button
                 type="button"
                 onClick={searchRooms}
-                className="flex items-center justify-center gap-3 bg-[#4a382d] px-7 py-4 text-sm text-white hover:bg-[#655043]"
+                className="cursor-pointer rounded-lg flex items-center justify-center gap-3 bg-[#4a382d] px-7 py-4 text-sm text-white hover:bg-[#655043]"
               >
                 Search Rooms
                 <ArrowRight size={17} />
@@ -289,11 +240,11 @@ export default function HomePage() {
               </Link>
             </div>
 
-            <div className="grid gap-7 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-7 md:grid-cols-2 lg:grid-cols-3 ">
               {rooms.map((room) => (
                 <article
                   key={room.name}
-                  className="group overflow-hidden bg-[#f8f6f1]"
+                  className="group overflow-hidden bg-[#f8f6f1] overflow-hidden rounded-xl border border-[#d1c9be] "
                 >
                   <div className="relative overflow-hidden">
                     <img
@@ -425,7 +376,7 @@ export default function HomePage() {
 
               <a
                 href="#booking"
-                className="mt-9 inline-flex items-center gap-3 bg-[#f8f6f1] px-8 py-4 text-sm font-medium text-[#4a382d] hover:bg-[#e9dfd1]"
+                className="rounded-lg mt-9 inline-flex items-center gap-3 bg-[#f8f6f1] px-8 py-4 text-sm font-medium text-[#4a382d] hover:bg-[#e9dfd1]"
               >
                 Plan Your Stay
                 <ArrowRight size={17} />

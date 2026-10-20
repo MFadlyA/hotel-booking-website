@@ -3,11 +3,20 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f8f6f1;
-  --foreground: #292722;
-  --primary: #4a382d;
-  --secondary: #a58b72;
-  --border: #ded5c8;
+  --background: #e9e5df;
+  --foreground: #39332d;
+
+  --surface: #f0ede7;
+  --surface-muted: #ded8cf;
+
+  --primary: #755b43;
+  --primary-hover: #604832;
+
+  --accent: #c4a477;
+  --accent-light: #d5b78a;
+
+  --border: #d1c9be;
+  --muted: #81776c;
 }
 
 * {
