@@ -13,6 +13,10 @@ const nextConfig: NextConfig = {
       },
     },
   },
+  output: "export",
+  images: {
+    unoptimized: true, // Diperlukan jika menggunakan komponen <Image /> bawaan Next.js pada static export
+  },
 };
 
 export default nextConfig;
