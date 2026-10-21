@@ -1,24 +1,22 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, ArrowRight, Check, Maximize, Users } from "lucide-react";
+import {
+  ArrowLeft,
+  ArrowRight,
+  Check,
+  Maximize,
+  Users,
+} from "lucide-react";
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-// 1. Impor array atau fungsi daftar kamar dari file data Anda (misal: rooms)
-import { rooms, getRoomBySlug, formatPrice } from "@/data/rooms";
+import { getRoomBySlug, formatPrice } from "@/data/rooms";
 
 type RoomDetailsPageProps = {
   params: Promise<{
     slug: string;
   }>;
 };
-
-// 2. Tambahkan generateStaticParams agar Next.js tahu slug kamar apa saja yang perlu diekspor ke HTML statis
-export async function generateStaticParams() {
-  return rooms.map((room) => ({
-    slug: room.slug,
-  }));
-}
 
 export default async function RoomDetailsPage({
   params,
@@ -174,7 +172,9 @@ export default async function RoomDetailsPage({
 
             {/* AMENITIES */}
             <div className="mt-10">
-              <h2 className="text-3xl text-[#4a382d]">Room Amenities</h2>
+              <h2 className="text-3xl text-[#4a382d]">
+                Room Amenities
+              </h2>
 
               <p className="mt-3 text-sm text-[#777064]">
                 Everything you need for a comfortable stay.
@@ -200,7 +200,9 @@ export default async function RoomDetailsPage({
               MAKE IT YOUR STAY
             </p>
 
-            <h2 className="mt-4 text-3xl text-[#4a382d]">Reserve This Room</h2>
+            <h2 className="mt-4 text-3xl text-[#4a382d]">
+              Reserve This Room
+            </h2>
 
             <div className="mt-6 border-b border-[#ded5c8] pb-6">
               <p className="text-sm text-[#777064]">Starting from</p>
